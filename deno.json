@@ -1,0 +1,31 @@
+{
+  "$id": "https://jsr.io/schema/config-file.v1.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "name": "@yamanoku/alt-decision-tree-mcp-server",
+  "description": "Model Context Protocol server that generates appropriate alternative text for images using ALT decision tree",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./alt-decision-tree-mcp-server.ts",
+  "tasks": {
+    "dev": "deno run alt-decision-tree-mcp-server.ts",
+    "test": "deno test",
+    "lint": "deno lint",
+    "fmt": "deno fmt"
+  },
+  "imports": {
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@^1.11.1",
+    "zod": "npm:zod@^3.24.4"
+  },
+  "publish": {
+    "include": [
+      "alt-decision-tree-mcp-server.ts",
+      "types.ts",
+      "tools/**/*.ts",
+      "README.md",
+      "LICENSE"
+    ],
+    "exclude": [
+      "tools/**/*.test.ts"
+    ]
+  }
+}
