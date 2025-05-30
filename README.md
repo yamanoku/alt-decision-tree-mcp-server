@@ -1,4 +1,8 @@
-# ALT Decision Tree MCP Server
+<p align="center">
+  <img src="./logo.png" alt="ALT Decision Tree MCP Serverロゴ" width="200" height="200">
+</p>
+
+<h1 align="center">ALT Decision Tree MCP Server</h1>
 
 画像の代替テキスト（ALT属性）をALT決定木に基づいて自動生成するModel Context
 Protocol (MCP) サーバーです。
